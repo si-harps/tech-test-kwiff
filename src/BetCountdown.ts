@@ -35,9 +35,9 @@ export const UPCOMING: TicketType = {
 }
 
 // The calculate function must 
-// - receive input of type: TicketType
-// - receive input of ticket: Outcome
-// - return an array of numbers
+// - receive type: TicketType
+// - receive ticket: Outcome
+// - return an array of numbers based on current ticket
 export type Calculate = (type: TicketType, ticket: Outcome) => Array<Number>;
 
 export const calculate: Calculate = (type, ticket) => [ 
